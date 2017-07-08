@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script> 
+
+	<style type="text/css">
+		body{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.title{
+			font-size: 10px;
+		}
+		.name{
+			display: inline;
+		}
+		.write_name{
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+			display: inline;
+		}
+		.email{
+			display: inline;
+		}
+		.write_email{
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+			display: inline;
+		}
+		.phone_part{
+			opacity: 1;
+		}
+		.phone{
+			display: inline;
+		}
+		.write_phone{
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+			display: inline;
+		}
+		.search_ID{
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 30px auto;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="title">아이디 찾기</div>
+	<br>
+	<div class="choose_mathod">
+		<input type="radio" name="check_mathod" value="email" onclick="choose_email1('phone_part')" >이메일로 찾기
+		<input type="radio" name="check_mathod" value="phone" onclick="choose_email2('email_part')" >핸드폰으로 찾기<br><br>
+	</div>
+	<div class="name_part">
+		<div class="name">이름</div>
+		<input type="text" class="write_name">
+	</div>
+	<div class="email_part">
+		<div class="email">이메일</div>
+		<input type="text" class="write_email">
+	</div>	
+	<div class="phone_part">
+		<div class="phone">핸드폰</div>
+		<input type="text" class="write_phone">
+	</div>
+	<input type="submit" value="조회" class="search_ID">
+</body>
+<script type="text/javascript">
+	function choose_email1(classname){
+		$('.phone_part').hide('phone_part');
+		$('.email_part').show('email_part');
+	}
+	function choose_email2(classname){
+		$('.email_part').hide('email_part');
+		$('.phone_part').show('phone_part');
+	}
+	
+</script>
+</html>

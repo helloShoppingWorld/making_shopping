@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		body{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.title{
+			font-size: 10px;
+		}
+		.ID{
+			display: inline;
+		}
+		.write_ID{
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+			display: inline;	/*id부분 두개의 div 한줄로*/
+		}
+		.name{
+			display: inline;
+		}
+		.write_name{
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+			display: inline;	/*name부분 두개의 div 한줄로*/
+		}
+		.phone{
+			display: inline;
+		}
+		.write_phone{
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+			display: inline;	/*phone부분 두개의 div 한줄로*/
+		}
+		.search_PW{
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 30px auto;		/*조회버튼*/
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="title">패스워드 찾기</div>
+	<br>
+	<div class="ID_part">
+		<div class="ID">아이디</div>
+		<input type="text" class="write_ID">	<!--아이디 입력하는 부분-->
+	</div>
+	<div class="name_part">
+		<div class="name">이름 &nbsp;&nbsp; </div>  <!--아이디 이름 핸드폰 입력부분 줄 맞추고 싶은데 방법을 이거밖에 모름-->
+		<input type="text" class="write_name">		<!--이름 입력하는 부분-->
+	</div>	
+	<div class="phone_part">
+		<div class="phone">핸드폰</div>
+		<input type="text" class="write_phone">		<!--핸드폰 번호 입력하는 부분-->
+	</div>
+	<input type="submit" value="조회" class="search_PW">		<!--조회버튼-->
+</body>
+</html>

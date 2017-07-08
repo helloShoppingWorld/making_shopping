@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script> 
+
+	<style type="text/css">
+		body{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.title{
+			font-size: 10px;
+		}
+		.ID{
+			display: inline;
+		}
+		.write_ID{
+			display: inline;
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+		}
+		.PW_check_part{
+			width: auto;
+		}
+		.PW{
+			display: inline;
+		}
+		.write_PW{
+			display: inline;
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+		}
+		.PW-check{
+			display: inline;
+		}
+		.write_PW_check{
+			display: inline;
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+		}
+		.address{
+			display: inline;
+		}
+		.write_address{
+			display: inline;
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+		}
+		.phone{
+			display: inline;
+		}
+		.write_phone{
+			display: inline;
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+		}
+		.email{
+			display: inline;
+		}
+		.write_email{
+			display: inline;
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+		}
+		.save_button{
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 30px auto;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+	<div class="title">패스워드 찾기</div>
+	<br>
+	<div class="ID_part">
+		<div class="ID">아이디</div>
+		<input type="text" class="write_ID">	
+	</div>
+	<div class="PW_part">
+		<div class="PW">패스워드</div>
+		<input type="password" class="write_PW">	
+	</div>
+	<div class="PW_check_part">
+		<div class="PW_check">패스워드 확인</div>
+		<input type="password" class="write_PW_check">
+	</div>
+	<div class="address_part">
+		<div class="address">주소</div>
+		<input type="text" class="write_address">	
+	</div>
+	<div class="phone_part">
+		<div class="phone">휴대전화</div>
+		<input type="text" class="write_phone">	
+	</div>
+	<div class="email_part">
+		<div class="email">이메일</div>
+		<input type="text" class="write_email">	
+	</div>
+	<div class="click_button">
+		<input type="button" value="수정내용 저장" class="save_button" onclick="compare_pw_check(input_pw, input_pw_check)">
+		<input type="button" value="취소" class="cancle_button">
+	</div>
+
+	<script type="text/javascript">
+		function compare_pw_check(input_pw, input_pw_check){
+			if(input_pw != input_pw_check)
+				alert('패스워드가 일치하지 않습니다.');
+			}
+	
+		var input_pw = $('.write_PW').val();
+		var input_pw_check = $('.write_PW_check').val();
+	</script>
+
+	
+</body>
+
+</html>

@@ -32,7 +32,22 @@
 		.goods_information{
 			display: inline-block;
 		}
-
+		.delete_checked_goods_button{
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 30px auto;
+			font-size: 15px;
+		}
+		.buy_it_button{
+			position: relative;
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 30px auto;
+			font-size: 15px;
+			left: 68%;
+		}
 	</style>
 </head>
 <body>
@@ -63,5 +78,9 @@
 		</tbody>
 	</table>
 	<br>
+
+	<input type="submit" value="선택상품삭제" class="delete_checked_goods_button">
+	<input type="submit" value="전체삭제" class="delete_all_goods_button">
+	<input type="submit" value="주문하기" class="buy_it_button">
 </body>
 </html>

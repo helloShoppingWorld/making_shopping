@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>buy</title>
 
 	<style type="text/css">
 		body{
@@ -25,18 +25,27 @@
 			color: white;
 		}
 		.goods_picture{
+			position: relative;
 			display: inline-block;
-			width: 70px;
+			width: 120px;
 			height: auto;
+			left: -20%;
 		}
 		.goods_information{
 			display: inline-block;
+		}
+		.goods_name{
+									/*글자 위치조정*/
+		}
+		.goods_option{
+	
 		}
 		.info_part{
 			font-size: 20px;
 		}
 		.name{
-			display: inline;
+			display: inline-block;
+			width: 120px;
 		}
 		.write_name{
 			display: inline;
@@ -46,7 +55,8 @@
 			border-bottom: 0.9px solid #244169;
 		}
 		.address{
-			display: inline;
+			display: inline-block;
+			width: 120px;
 		}
 		.write_address{
 			display: inline;
@@ -56,7 +66,8 @@
 			border-bottom: 0.9px solid #244169;
 		}
 		.phone{
-			display: inline;
+			display: inline-block;
+			width: 120px;
 		}
 		.write_phone{
 			display: inline;
@@ -65,7 +76,9 @@
 			border-top: white;
 			border-bottom: 0.9px solid #244169;
 		}
-		
+		.needs{
+			display: inline-block;
+		}
 		.write_needs{
 			
 			border-left: white;
@@ -81,6 +94,11 @@
 			font-size: 15px;
 		}
 	</style>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+		
+	</script>
 </head>
 <body>
 	<table>
@@ -127,7 +145,7 @@
 		<input type="text" class="write_phone">
 	</div>
 	<div class="needs_part">
-		<div>배송시 요구사항</div>
+		<div class="needs">배송시 요구사항</div>
 		<input type="text" class="write_needs">
 	</div>
 

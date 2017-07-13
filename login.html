@@ -13,8 +13,27 @@
 			border:1px solid black;
 			text-align: center;
 			margin: auto;
-			width: 300px;
-			height: 230px;
+			width: 22em;
+			height: 10em;
+		}
+		.box
+		{
+			display: inline-block;
+			margin: 1em;
+		}
+		.login_input
+		{
+			text-align: center;
+			width: 70%
+		}
+		.button
+		{
+			text-align: center;
+			border:none;
+			background-color: #244169;
+			color:white;
+			height: 4em;
+			width:4em;
 		}
 		.blank
 		{
@@ -33,15 +52,18 @@
 	</div>
 
 	<div class="loginbox">
-		<br>WELCOME!!<br><br>
-		<form action="/action_page.php">
-			ID <input type="text" name="id"><br>
-			PW <input type="password" name="pw"><br>
-			<input type="submit" value="login" class="button">
-		</form><br>
-		<button type="button" formtarget="_self" >아이디 찾기</button>
-		<button type="button" formtarget="_self" >비밀번호 찾기</button>
+		<br>WELCOME !!<br>
+		<div class="login_input box">
+			&nbspID <input type="text" name="id" style="border:none; border-bottom: solid #244169 2px;"><br>
+			&nbspPW <input type="password" name="pw" style="border:none; border-bottom: solid #244169 2px;">
+		</div>
+		<div class="box">
+			<button type="submit" name="login_button" class="button" onclick="">
+				login
+			</button>
+		</div>
 	</div>
+
 
 </body>
 </html>

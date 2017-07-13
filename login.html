@@ -4,6 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Login</title>
 	<style type="text/css">
+		.basic_setting
+		{
+			margin: auto;
+			font-size: 15px;
+			font-family: "굴림";
+			text-align: center;
+		}
 		.logo
 		{
 			height: 50px;
@@ -11,7 +18,6 @@
 		.loginbox
 		{
 			border:1px solid black;
-			text-align: center;
 			margin: auto;
 			width: 22em;
 			height: 10em;
@@ -23,12 +29,11 @@
 		}
 		.login_input
 		{
-			text-align: center;
-			width: 70%
+			border:none;
+			border-bottom: solid #244169 2px;
 		}
 		.button
 		{
-			text-align: center;
 			border:none;
 			background-color: #244169;
 			color:white;
@@ -37,7 +42,7 @@
 		}
 		.blank
 		{
-			height: 200px;
+			height: 10em;
 		}
 	</style>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
@@ -50,12 +55,13 @@
 	<div class="logo">
 		<img src="./img/logo.png" height="50px" width="auto">
 	</div>
+	<div class="blank"></div>
 
-	<div class="loginbox">
+	<div class="basic_setting loginbox">
 		<br>WELCOME !!<br>
-		<div class="login_input box">
-			&nbspID <input type="text" name="id" style="border:none; border-bottom: solid #244169 2px;"><br>
-			&nbspPW <input type="password" name="pw" style="border:none; border-bottom: solid #244169 2px;">
+		<div class="box">
+			&nbspID <input type="text" name="id" class="login_input"><br>
+			&nbspPW <input type="password" name="pw" class="login_input">
 		</div>
 		<div class="box">
 			<button type="submit" name="login_button" class="button" onclick="">

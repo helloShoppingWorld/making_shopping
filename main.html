@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>main</title>
+
+	<style type="text/css">
+		body{
+			position: relative;
+			width: auto;      /*창 크기에 따라 사이즈 조정 하고싶음*/
+		}
+		.homeshopping_title{
+			width: 100px;
+			margin: 30px auto;
+			font-size: 20px;
+			color: black;
+			text-decoration: none !important; /*밑줄을 없애고 싶었습니다..*/
+		}
+		.menu{
+			background: #6791cb;
+			padding: 5px;
+		}
+		.notice{
+			display: inline-block;
+			color: white;
+			margin-left: 150px;
+			margin-right: 120px;
+		}
+		.event{
+			display: inline-block;
+			color: white;
+			margin-left: 120px;
+			margin-right: 120px;
+		}
+		.category{
+			display: inline-block;
+			color: white;
+			margin-left: 120px;
+			margin-right: 120px;
+		}
+		.comment{
+			display: inline-block;
+			color: white;
+			margin-left: 120px;
+			margin-right: 120px;
+		}
+		.first_line{
+			font-size: 10px;
+			text-align: right;
+		}
+		.search{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.search_icon{
+			display: inline-block;
+			width: 16px;
+		}
+		.write_search{
+			display: inline-block;
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;
+			width: 100px;
+		}
+		.join{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.login{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.mypage{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.cart{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.info{
+			font-size: 10px;
+			text-align: right;
+			margin: 20px;
+		}
+		.phone_num{
+			display: inline-block;
+			margin-right: 40px;
+			/*width: 200px;   화면창이 클떄는 괜찮은데 잘으면 밑에줄로 밀림*/
+		}
+		.facebook{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.twitter{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.kakao{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.QnA{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.exchange_info{
+			display: inline-block;
+			margin-right: 40px;
+		}
+		.goods_image1{
+			display: inline-block;
+			margin-bottom: 50px;
+			width: 200px;
+			height: 250px;
+		}
+		.goods_image2{
+			display: inline-block;
+			margin-bottom: 25px;
+			width: 250px;
+			height: 300px;
+		}
+		.goods_image3{
+			display: inline-block;
+			margin-top: 30px;
+			width: 300px;
+			height: 350px;
+		}
+		.goods_image4{
+			display: inline-block;
+			margin-bottom: 25px;
+			width: 250px;
+			height: 300px;
+		}
+		.goods_image5{
+			display: inline-block;
+			margin-bottom: 50px; 
+			width: 200px;
+			height: 250px;
+		}
+		.circle_checked{
+			width: 200px;
+			margin: auto;
+		}
+	</style>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+		
+	</script>
+		
+</head>
+<body>
+	<div class="first_line">
+		<div class="search">
+			<form>
+				<img class="search_icon" src="C:\repo\homeShopping\making_shopping\image\search.png">
+				<input type="search" class="write_search">
+			</form>
+		</div>
+		<div class="join">회원가입</div>
+		<a href="login.html"><div class="login">로그인</div></a>
+		<div class="mypage">마이페이지</div>
+		<a href="cart.html"><div class="cart">장바구니</div></a>
+	</div>
+	<a href="main.html"><div class="homeshopping_title">보스베이비</div></a>
+	<div class="menu">
+		<div class="notice">공지사항</div>
+		<div class="event">이벤트</div>
+		<div class="category">카테고리</div>
+		<div class="comment">후기</div>
+	</div>
+	<div class="swipe_image">		<!--상품들 옆으로 넘어가는 부분-->
+		<img class="goods_image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpK3SB48jE2dmaC25HM7yiMP9U3eIZsjMCTx0Bb2uBJ-7eXxsk">
+		<img class="goods_image2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpNLFZidaXV4erMNtfS74kj0YJjt_sUfsqc2S2uiyHepRlKnFP">
+		<img class="goods_image3" src="http://naturemappingfoundation.org/natmap/photos/mammals/yellow-bellied_marmot_2732np.jpg">
+		<img class="goods_image4" src="https://cdn-images-1.medium.com/max/1600/1*8GVucX9yhnL21KCtcyFDRQ.png">
+		<img class="goods_image5" src="http://pds.joins.com/news/component/zenithnews/201707/06/89954_81028_1714.jpg">
+	</div>
+	<br><br>
+	<div class="circle_checked">		<!--현재 가운데에 있는 이미지 위치의 원을 색으로 표시-->
+		<input type="radio" name="pick_image" class="circle1">
+		<input type="radio" name="pick_image" class="circle2">
+		<input type="radio" name="pick_image" class="circle3" checked>
+		<input type="radio" name="pick_image" class="circle4">
+		<input type="radio" name="pick_image" class="circle5">
+	</div>
+	<div class="info">
+		<div class="phone_num">전화번호</div>
+		<div class="facebook">facebook</div>
+		<div class="twitter">twitter</div>
+		<div class="kakao">kakao</div>
+		<div class="QnA">QnA</div>
+		<div class="exchange_info">반품/교환안내</div>
+	</div>
+</body>
+</html>

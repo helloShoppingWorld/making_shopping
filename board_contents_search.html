@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>board_contents_search</title>
+
+	<style type="text/css">
+		.write_contents{
+			width: 300px;
+			height: 100px;
+		}
+		.go_to_board_button{
+			position: relative;
+			left: 38%;
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 30px auto;
+			font-size: 15px;
+		}
+		.previous_article{
+			display: inline-block;
+		}
+		.previous_article_title{
+			display: inline-block;
+		}
+		.next_article{
+			display: inline-block;
+		}
+		.next_article_title{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div>제목</div>
+	<div>작성일</div>
+	<div>내용</div>
+	<textarea class="write_contents" readonly>작성되어있는 내용을 보여줍니다.</textarea>
+	<br>
+	<input type="button" value="목록으로"  class="go_to_board_button"><br>
+	<div class="previous_article_part">
+		<div class="previous_article">이전글</div>
+		<a class="previous_article_title" href="http://pds.joins.com/news/component/zenithnews/201707/06/89954_81028_1714.jpg">이전글입니다.</a>
+	</div>	<!--목록에서 이전글 제목을 받아옴-->
+	<div class="next_article_part">
+		<div class="next_article">다음글</div>
+		<a class="next_article_title" href="C:\Users\gram\Desktop\새 폴더\배경\dw.png">다음글입니다.</a>
+	</div>	<!--목록에서 다음글 제목을 받아옴-->
+</body>
+</html>

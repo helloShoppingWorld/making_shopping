@@ -6,8 +6,9 @@
 
 	<style type="text/css">
 		body{
-			position: relative;
-			width: auto;      /*창 크기에 따라 사이즈 조정 하고싶음*/
+			position: absolute;
+			
+			 
 		}
 		.homeshopping_title{
 			width: 100px;
@@ -168,8 +169,8 @@
 	</div>
 	<a href="main.html"><div class="homeshopping_title">보스베이비</div></a>
 	<div class="menu">
-		<div class="notice">공지사항</div>
-		<div class="event">이벤트</div>
+		<a href="board_notice.html"><div class="notice">공지사항</div></a>
+		<div class="event" hovere="event_hover('event')">이벤트</div>
 		<div class="category">카테고리</div>
 		<div class="comment">후기</div>
 	</div>
@@ -197,4 +198,11 @@
 		<div class="exchange_info">반품/교환안내</div>
 	</div>
 </body>
+
+<script type="text/javascript">
+	function title_image_click(classname){
+		
+		$('.title_image').toggleClass('expand_margin');
+	}
+</script>
 </html>

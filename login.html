@@ -20,7 +20,7 @@
 			border:1px solid black;
 			margin: auto;
 			width: 22em;
-			height: auto;
+			height: 15em;
 		}
 		.box
 		{
@@ -40,6 +40,12 @@
 			height: 4em;
 			width:4em;
 		}
+		.button_find
+		{
+			border:none;
+			background-color: white;
+			font-weight: bold;
+		}
 		.blank
 		{
 			height: 10em;
@@ -58,7 +64,7 @@
 	<div class="blank"></div>
 
 	<div class="basic_setting loginbox">
-		<br>WELCOME !!<br>
+		<br>WELCOME !!<br><br>
 		<div class="box">
 			&nbspID <input type="text" name="id" class="login_input"><br>
 			&nbspPW <input type="password" name="pw" class="login_input">
@@ -67,6 +73,11 @@
 			<button type="submit" name="login_button" class="button" onclick="">
 				login
 			</button>
+		</div>
+		<div>
+			<br>
+			<button name="find_id" class="button_find">아이디 찾기</button>&nbsp/&nbsp
+			<button name="find_pw" class="button_find">비밀번호 찾기</button>
 		</div>
 	</div>
 

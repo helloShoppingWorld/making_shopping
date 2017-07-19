@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>cart</title>
+
+	<style type="text/css">
+		body{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		table{
+			width: 800px;
+			border: 1px solid black;
+			border-collapse: collapse;
+			text-align:center
+		}
+		th,td{
+			border: 1px solid black;
+		}
+		thead{
+			background: #244169;
+			color: white;
+		}
+		.goods_picture{
+			display: inline-block;
+			width: 70px;
+			height: auto;
+		}
+		.goods_information{
+			display: inline-block;
+		}
+		.delete_checked_goods_button{
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 30px auto;
+			font-size: 15px;
+		}
+		.buy_it_button{
+			position: relative;
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 30px auto;
+			font-size: 15px;
+			left: 68%;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>선택</th>
+				<th>상품/옵션정보</th>
+				<th>수량</th>				
+				<th>총금액</th>
+				<th>배송비</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="checkbox" class="goods_check"></td>
+				<td class="goods">
+					<img class = "goods_picture" src="C:\repo\img\1.jpg">
+					<div class="goods_information">
+						<div class="goods_name">상품명</div>
+						<div class="goods_option">옵션</div>
+					</div>
+				</td>
+				<td>수량</td>
+				<td>총금액</td>
+				<td>배송비</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+	<input type="submit" value="선택상품삭제" class="delete_checked_goods_button">
+	<input type="submit" value="전체삭제" class="delete_all_goods_button">
+	<input type="submit" value="주문하기" class="buy_it_button">
+</body>
+</html>

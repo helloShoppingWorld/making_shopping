@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>board</title>
+	<style type="text/css">
+		.total_page_div{
+			position: relative;
+			left: 10%;
+		}
+		table{
+			width: 80%;
+			transform: translate(-12%);
+			table-layout: fixed;  /*크기 자동조절*/
+			border: 1px solid black;
+			border-collapse: collapse;   /*이중테두리 방지*/
+			text-align:center;
+			margin:50px auto;
+		}
+		th,td{
+			border: 1px solid black;
+		}
+		thead{		
+			background: #244169;
+			color: white;
+		}
+		.post_title{
+			width: 40%;
+		}
+		.search_button{
+			display: inline-block;
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 30px;
+			font-size: 15px;
+		}
+		.post_search{
+			display: inline-block;
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;		
+		}
+
+		.page_num{
+			display: inline-block;
+			left: 20%;   /*paging부분만 가운데로 보내기*/
+		}
+	
+	</style>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+		
+	</script>
+</head>
+<body>
+	<div class="total_page_div">
+		<table>
+			<thead>
+				<tr>
+					<th>게시글 번호</th>
+					<th class="post_title">제목</th>
+					<th>작성일</th>
+					<th>조회수</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>001</td>
+					<td>hello</td>
+					<td>17-07-14</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>hello</td>
+					<td>17-07-14</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>003</td>
+					<td>hello</td>
+					<td>17-07-14</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>004</td>
+					<td>hello</td>
+					<td>17-07-14</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>	
+
+		<div>
+			<input type="search" class="post_search">
+			<input type="submit" class="search_button">
+			<div class="page_num">1 2 3 4 5</div>  <!--paging 방식-->
+		</div>
+	</div>
+</body>
+</html>

@@ -19,31 +19,30 @@
 		}
 		.menu{
 			background: #6791cb;
-			padding: 5px;
+			padding-top: 5px;
+			text-align: center;
 		}
 		.notice{
 			display: inline-block;
 			color: white;
-			margin-left: 150px;
-			margin-right: 120px;
+			width: 150px;
 		}
 		.event{
 			display: inline-block;
 			color: white;
-			margin-left: 120px;
-			margin-right: 120px;
+			width: 150px;
+			
 		}
 		.category{
 			display: inline-block;
 			color: white;
-			margin-left: 120px;
-			margin-right: 120px;
+			width: 150px;
 		}
+	
 		.comment{
 			display: inline-block;
 			color: white;
-			margin-left: 120px;
-			margin-right: 120px;
+			width: 150px;
 		}
 		.first_line{
 			font-size: 10px;
@@ -145,6 +144,36 @@
 			width: 200px;
 			margin: auto;
 		}
+		ul{
+			display: inline-block;
+			margin: 0;
+		}
+		ul li{
+			display: inline-block;
+		}
+		ul li:hover{  	/*메뉴부분에 hover했을때 이벤트,카테고리 써져있는 부분*/
+			background: #244169;
+			text-align: center;  	/*글자는 펼쳐지는 공간의 가운데에 위치*/
+		}
+		ul li:hover ul{	/*hover했을 떄 펼쳐진 상세메뉴부분*/
+			display: block;
+			width: 150px;
+		}
+		ul li ul{	/*hover했을 떄 펼쳐진 상세메뉴부분*/
+			position: absolute;
+			color: white;
+			display: none;
+		}
+		ul li ul li{	/*hover했을 떄 펼쳐진 상세메뉴부분*/
+			position: relative;
+			left: -40px;	/*펼쳐지는 메뉴의 위치를 맞추기 위함*/
+ 			background: #244169;
+			display: block;
+
+		}
+		ul li ul li {display:block !important;} 
+		ul li ul li:hover {background: grey;} 	/*마우스 가져다 대면 해당 메뉴는 회색으로 변함*/
+	
 	</style>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
@@ -170,8 +199,27 @@
 	<a href="main.html"><div class="homeshopping_title">보스베이비</div></a>
 	<div class="menu">
 		<a href="board_notice.html"><div class="notice">공지사항</div></a>
-		<div class="event" hovere="event_hover('event')">이벤트</div>
-		<div class="category">카테고리</div>
+		<ul>
+			<li>
+				<div class="event">이벤트</div>
+				<ul class="event_menu">
+					<li>지난 이벤트</li>
+					<li>진행중인 이벤트</li>
+					<li>예정 이벤트</li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<div class="category">카테고리</div>
+				<ul class="category_menu">
+					<li>상의</li>
+					<li>하의</li>
+					<li>신발</li>
+					<li>양말</li>
+				</ul>
+			</li>
+		</ul>
 		<div class="comment">후기</div>
 	</div>
 	<div class="swipe_image">		<!--상품들 옆으로 넘어가는 부분-->
@@ -200,9 +248,7 @@
 </body>
 
 <script type="text/javascript">
-	function title_image_click(classname){
-		
-		$('.title_image').toggleClass('expand_margin');
-	}
+	
+
 </script>
 </html>

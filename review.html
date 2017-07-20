@@ -39,7 +39,7 @@
 		.box
 		{
 			display: inline-block;
-			margin:1em;
+			margin:0.5em;
 		}
 		#average_rating
 		{	
@@ -47,11 +47,25 @@
 			height: 100px;
 			width: 80px;
 			text-align: center;
-			
 		}
 		.blank
 		{
 			height:5em;
+		}
+		#graph_box
+		{
+			height: 100px;
+			width: 350px;
+			border:solid black 1px;
+		}
+		#align{
+			width: 100px;
+			height:1em;
+		}
+		#align_blank
+		{
+			width:380px;
+			height: 1em;
 		}
 	</style>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
@@ -62,9 +76,7 @@
 </head>
 <body>
 	<div class="basic_setting">
-		<div class="box">
-			
-		</div>
+		<div class="box" id="align_blank"></div>
 		<div class="box">
 			<button class="button basic_blue">게시판</button>
 		</div>
@@ -88,6 +100,7 @@
 				<option value="1">★</option>
 			</select>
 		</div>
+		<div class="box" id="align"></div>
 		<div class="box">
 			<button class="button basic_blue">리뷰 등록</button>
 		</div>
@@ -95,10 +108,9 @@
 	<div class="blank"></div>
 	<div>
 		<div class="box basic_skyblue" id="average_rating">
-			평균값<!--평균별점값을 가져온다-->
-
+		
 		</div>
-		<div>
+		<div class="box" id="graph_box">
 			
 		</div>
 	</div>

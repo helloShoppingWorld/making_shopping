@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>order_history</title>
+	<style type="text/css">
+		.first_line{
+			transform: translate(10%);
+		}
+		.total_page_div{
+			position: relative;
+			left: 10%;
+		}
+		table{
+			width: 80%;
+			transform: translate(-12%);
+			table-layout: fixed;  /*크기 자동조절*/
+			border: 1px solid black;
+			border-collapse: collapse;   /*이중테두리 방지*/
+			text-align:center;
+			margin:50px auto;
+		}
+		th,td{
+			border: 1px solid black;
+		}
+		thead{		
+			background: #244169;
+			color: white;
+		}
+		tbody tr{
+			font-size: 10px;
+		}
+
+		.post_title{
+			width: 40%;
+		}
+		.search_button{
+			display: inline-block;
+			background: #244169;
+			color: white;
+			border: 1px solid black;
+			margin: 20px;
+			font-size: 15px;
+		}
+		.post_search{
+			display: inline-block;
+			border-left: white;
+			border-right: white;
+			border-top: white;
+			border-bottom: 0.9px solid #244169;		
+		}
+
+		.page_num{
+			display: inline-block;
+			transform: translate(150%);   /*paging부분만 가운데로 보내기*/
+		}
+		.goods_picture{
+			display: inline-block;
+			position: relative;
+			width: 80px;
+			left: -30px;
+		}
+		.goods_information{
+			display: inline-block;
+		}
+		.goods_info{
+			width:30%;
+		}
+	
+	</style>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+		
+	</script>
+</head>
+<body>
+	<div class="first_line">*최근 1개월간의 상품만 조회됩니다.*</div>
+	<div class="total_page_div">
+		<table>
+			<thead>
+				<tr>
+					<th class="order_date">주문일자</th>
+					<th class="goods_info">상품정보</th>
+					<th class="buy_num">수량</th>
+					<th class="price">금액</th>
+					<th class="shipping_fee">배송비</th>
+					<th class="total_price">총금액</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="order_date">주문일자</th>
+					<th class="goods_info">
+						<img class = "goods_picture" src="C:\repo\img\1.jpg">
+						<div class="goods_information">
+							<div class="goods_name">상품명</div>
+							<div class="goods_option">옵션</div>
+						</div>
+					</th>
+					<th class="buy_num">수량</th>
+					<th class="price">금액</th>
+					<th class="shipping_fee">배송비</th>
+					<th class="total_price">총금액</th>
+				</tr>
+				<tr>
+					<th class="order_date">주문일자</th>
+					<th class="goods_info">
+						<img class = "goods_picture" src="C:\repo\img\1.jpg">
+						<div class="goods_information">
+							<div class="goods_name">상품명</div>
+							<div class="goods_option">옵션</div>
+						</div>
+					</th>
+					<th class="buy_num">수량</th>
+					<th class="price">금액</th>
+					<th class="shipping_fee">배송비</th>
+					<th class="total_price">총금액</th>
+				</tr>
+				<tr>
+					<th class="order_date">주문일자</th>
+					<th class="goods_info">
+						<img class = "goods_picture" src="C:\repo\img\1.jpg">
+						<div class="goods_information">
+							<div class="goods_name">상품명</div>
+							<div class="goods_option">옵션</div>
+						</div>
+					</th>
+					<th class="buy_num">수량</th>
+					<th class="price">금액</th>
+					<th class="shipping_fee">배송비</th>
+					<th class="total_price">총금액</th>
+				</tr>
+				<tr>
+					<th class="order_date">주문일자</th>
+					<th class="goods_info">
+						<img class = "goods_picture" src="C:\repo\img\1.jpg">
+						<div class="goods_information">
+							<div class="goods_name">상품명</div>
+							<div class="goods_option">옵션</div>
+						</div>
+					</th>
+					<th class="buy_num">수량</th>
+					<th class="price">금액</th>
+					<th class="shipping_fee">배송비</th>
+					<th class="total_price">총금액</th>
+				</tr>
+			</tbody>
+		</table>	
+
+		<div>
+			<input type="search" class="post_search">
+			<input type="submit" class="search_button">
+			<div class="page_num">1 2 3 4 5</div>  <!--paging 방식-->
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>post_authorized</title>
+	<style type="text/css">
+		.basic_setting
+		{
+			margin: auto;
+			font-size: 15px;
+			font-family: "맑은고딕";
+		}
+		.basic_blue
+		{
+			background-color: #244169;
+			color: white;
+		}
+		.basic_white
+		{
+			background-color: white;
+			color: black;
+		}
+		.button
+		{
+			text-align: center;
+			border:solid black 1px;
+			transition-property: background-color, color;
+		}
+		.button:hover
+		{
+			transition-property: background-color, color;
+			background-color: lightgrey;
+			color:black;
+		}
+		.posting
+		{
+			border:solid grey 1px;
+			text-align: left;
+		}
+		.box
+		{
+			display: inline-block;
+			margin:0.5em;
+		}
+	</style>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+  	
+  </script>
+</head>
+<body>
+	<div class="basic_setting">
+		&nbsp제목&nbsp<input type="text" name="subject" size=70><br>
+	</div>
+	<div class="basic_setting">
+		<br>&nbsp내용&nbsp<br>
+		<textarea rows="30" cols="80" class="posting"></textarea><br>
+	</div>
+	<div class="basic_setting">
+		<button type="submit" class="button basic_blue">작성</button>
+		<button type="reset" class="button basic_white">취소</button>
+	</div>
+</body>
+</html>

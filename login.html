@@ -4,6 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Login</title>
 	<style type="text/css">
+		.basic_setting
+		{
+			margin: auto;
+			font-size: 15px;
+			font-family: "맑은고딕";
+			text-align: center;
+		}
 		.logo
 		{
 			height: 50px;
@@ -11,10 +18,37 @@
 		.loginbox
 		{
 			border:1px solid black;
-			text-align: center;
 			margin: auto;
-			width: 300px;
-			height: 180px;
+			width: 22em;
+			height: 15em;
+		}
+		.box
+		{
+			display: inline-block;
+			margin: 1em;
+		}
+		.login_input
+		{
+			border:none;
+			border-bottom: solid #244169 2px;
+		}
+		.button
+		{
+			border:none;
+			background-color: #244169;
+			color:white;
+			height: 4em;
+			width:4em;
+		}
+		.button_find
+		{
+			border:none;
+			background-color: white;
+			font-weight: bold;
+		}
+		.blank
+		{
+			height: 10em;
 		}
 	</style>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
@@ -27,15 +61,30 @@
 	<div class="logo">
 		<img src="./img/logo.png" height="50px" width="auto">
 	</div>
+	<div class="blank"></div>
 
-	<div class="loginbox">
-		<br>WELCOME!!<br><br>
-		<form action="/action_page.php">
-			ID <input type="text" name="id"><br>
-			PW <input type="text" name="pw"><br>
-			<input type="submit" value="login" class="">
-		</form>
+	<div class="basic_setting loginbox">
+		<br>WELCOME !!<br><br>
+		<div class="box">
+			&nbspID <input type="text" name="id" class="login_input"><br>
+			&nbspPW <input type="password" name="pw" class="login_input">
+		</div>
+		<div class="box">
+			<button type="submit" name="login_button" class="button">
+				login
+			</button>
+		</div>
+		<div>
+			<br>
+			<button type="button" name="find_id" class="button_find" onclick="location.href='C:\repo\helloShoppingWorld\find_ID.html'">
+				아이디 찾기
+			</button>&nbsp/&nbsp
+			<button type="button" name="find_pw" class="button_find" onclick="window.open('C:\repo\helloShoppingWorld\find_PW.html','win','width=350,height=250,toolbar=0,scrollbars=0,resizable=0')">
+				비밀번호 찾기
+			</button>
+		</div>
 	</div>
+
 
 </body>
 </html>
